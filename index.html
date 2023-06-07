@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/css/all.css">
 </head>
+
 <body>
+    <button id="myBtn">+</button>
     <div class="box"></div>
+    
+        <div id="myModall" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <input type="text" class="editTitle">
+                <input type="text" class="editDescription">
+                <button class="btnEdit">Edit</button>
+            </div>
+    
+        </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <input type="text" class="newTitle">
+            <input type="text" class="newDescription">
+            <button class="btnAdd">Add</button>
+        </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./main.js"></script>
 </body>
+
 </html>
